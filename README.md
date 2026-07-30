@@ -35,9 +35,9 @@ Virtual Host Logs (other vhosts)
 
 ```
 Example:
-/var/log/httpd/access_log
-/var/log/httpd/error_log
-/var/log/httpd/other_vhosts_access_log
+  /var/log/httpd/access_log
+  /var/log/httpd/error_log
+  /var/log/httpd/other_vhosts_access_log
 
 
 ## Why Agentless?
@@ -49,6 +49,8 @@ Package dependency issues
 Log writing conflicts
 
 To avoid introducing instability into production systems, rsyslog was selected as the log forwarding mechanism.
+
+the file **siem-forwarder.conf** was created in **/etc/rsyslog.d/siem-forward.conf**  
 
 ## Problem Encountered
 
