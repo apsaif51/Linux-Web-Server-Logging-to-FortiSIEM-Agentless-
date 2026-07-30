@@ -80,7 +80,7 @@ Since rsyslog was already monitoring that file, it created a forwarding loop.
 
 The solution was to exclude the logging facility from the default rules.
 
-Example:
+in **/etc/rsyslog.conf **:
 
 `*.info;mail.none;authpriv.none;cron.none;local6.none /var/log/messages`
 
